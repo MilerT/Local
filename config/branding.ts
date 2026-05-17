@@ -26,10 +26,10 @@ export const branding = {
   
   // Información de contacto
   contact: {
-    phone: process.env.NEXT_PUBLIC_PHONE || '+1234567890',
-    email: process.env.NEXT_PUBLIC_EMAIL || 'contacto@mievento.com',
-    address: process.env.NEXT_PUBLIC_ADDRESS || '123 Calle Principal, Ciudad',
-    whatsapp: process.env.NEXT_PUBLIC_PHONE || '+1234567890',
+    phone: process.env.NEXT_PUBLIC_PHONE || '+51 967533243',
+    email: process.env.NEXT_PUBLIC_EMAIL || 'remixtinta@gmail.com',
+    address: process.env.NEXT_PUBLIC_ADDRESS || 'Pje. Sta. Rosa 116',
+    whatsapp: process.env.NEXT_PUBLIC_PHONE || '+51 967533243',
   },
   
   // Redes sociales
