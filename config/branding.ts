@@ -51,7 +51,7 @@ export const branding = {
     title: 'Mi Local de Eventos | Salón de Eventos Íntimo',
     titleTemplate: '%s | Mi Local de Eventos',
     description:
-      'Salón de eventos acogedor para celebraciones íntimas de hasta 80 personas. Bodas, cumpleaños, reuniones y eventos sociales con atención personalizada.',
+      'Salón de eventos acogedor para celebraciones íntimas de hasta 80 personas. Bodas, cumpleaños y reuniones familiares o eventos peronalizados.',
     keywords:
       'salón de eventos, bodas íntimas, cumpleaños, reuniones familiares, eventos sociales, celebraciones, fiestas',
     ogImage: '/og-image.jpg',
