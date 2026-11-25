@@ -5,7 +5,7 @@
 
 export const branding = {
   // Información básica del negocio
-  name: 'Mi Local de Eventos',
+  name: 'Antisa',
   tagline: 'Momentos íntimos, recuerdos eternos',
   description:
     'Salón de eventos acogedor e íntimo para celebraciones de hasta 80 personas. Bodas, cumpleaños, reuniones familiares y eventos sociales con atención personalizada.',
@@ -22,7 +22,7 @@ export const branding = {
 
   // Logo (ruta relativa a public/)
   logo: '/logo.svg',
-  logoAlt: `Mi Local de Eventos Logo`,
+  logoAlt: `Antisa Logo`,
 
   // Información de contacto
   contact: {
@@ -48,8 +48,8 @@ export const branding = {
 
   // SEO
   seo: {
-    title: 'Mi Local de Eventos | Salón de Eventos Íntimo',
-    titleTemplate: '%s | Mi Local de Eventos',
+    title: 'Antisa | Salón de Eventos Íntimo',
+    titleTemplate: '%s | Antisa',
     description:
       'Salón de eventos acogedor para celebraciones íntimas de hasta 80 personas. Bodas, cumpleaños y reuniones familiares o eventos peronalizados.',
     keywords:

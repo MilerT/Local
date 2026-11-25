@@ -1,15 +1,55 @@
-import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Fraunces, Outfit } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "@/components/layout/navbar";
-import { Footer } from "@/components/layout/footer";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-serif" });
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  weight: ["500", "600"],
+  variable: "--font-fraunces",
+  display: "swap",
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-outfit",
+  display: "swap",
+});
+
+export const viewport: Viewport = {
+  themeColor: "#070d0b",
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
-  title: "Mi Local de Eventos",
-  description: "El mejor lugar para tus eventos especiales, bodas, promociones y cumpleaños.",
+  title: "Antisa · Local de eventos en Arequipa",
+  description:
+    "Alquila Antisa para un cumpleaños, una boda, una reunión o un evento de empresa. Jardín, pabellón techado, cocina y baños en un solo local de Arequipa. Pide la fecha en el portal.",
+  alternates: {
+    canonical: "https://antisa.site/",
+  },
+  icons: {
+    icon: "/assets/favicon-antisa.png",
+    apple: "/assets/logo-antisa.png",
+  },
+  openGraph: {
+    locale: "es_PE",
+    type: "website",
+    siteName: "Antisa",
+    title: "Antisa · Un jardín y un techo para tu celebración",
+    description:
+      "Cumpleaños, bodas, reuniones y eventos de empresa en Arequipa. Jardín, pabellón, cocina y baños. La fecha se pide en el portal de clientes.",
+    url: "https://antisa.site",
+    images: [
+      {
+        url: "https://antisa.site/local/portada.jpg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({
@@ -18,14 +58,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
-      <body className={`${inter.variable} ${playfair.variable} min-h-screen bg-background font-sans antialiased flex flex-col`}>
-        <Navbar />
-        <main className="flex-1">
-          {children}
-        </main>
-        <Footer />
-      </body>
+    <html lang="es" className={`${fraunces.variable} ${outfit.variable}`}>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }

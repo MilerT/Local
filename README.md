@@ -1,4 +1,4 @@
-# Mi Local de Eventos - Frontend Premium
+# Antisa - Frontend Premium
 
 Proyecto frontend moderno y escalable para un local de eventos (bodas, quinceañeras, eventos corporativos, etc.), desarrollado con **Next.js 14**, **TypeScript** y **Tailwind CSS**. 
 
